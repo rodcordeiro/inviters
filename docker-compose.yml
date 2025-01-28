@@ -1,0 +1,17 @@
+version: "3.8"
+
+services:
+  php-apache:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: php-apache
+    env_file:
+      - .env
+    ports:
+      - "80:80" # Porta 8080 no host para a porta 80 no container
+    volumes:
+      - ./src:/var/www/html # Sincronizar a pasta local com o container
+    environment:
+      - APACHE_RUN_USER=www-data
+      - APACHE_RUN_GROUP=www-data

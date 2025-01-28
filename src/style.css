@@ -1,0 +1,136 @@
+/* 
+#8a2be2 blueviolet
+#556b2f darkolivegreen
+#a0ebcf
+#014871
+ */
+@import url("https://rodcordeiro.github.io/shares/fonts/sketch-gothic-school/font.css");
+@import url("https://rodcordeiro.github.io/shares/fonts/Square721BT-Roman/font.css");
+:root {
+  --cor: blueviolet;
+}
+* {
+  padding: 0;
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+body {
+  background-color: #181818;
+}
+.container {
+  display: flex;
+  flex: 1;
+  flex-direction: column;
+}
+header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  height: 100px;
+  width: 100%;
+  background-color: var(--cor);
+}
+
+header span {
+  font-size: 200%;
+  line-height: 30pt;
+  align-self: center;
+  font-weight: lighter;
+}
+header img {
+  height: 90%;
+  width: auto;
+  padding: 5px;
+}
+.content {
+  display: flex;
+  flex-direction: row;
+  min-height: calc(100vh - 100px);
+  justify-content: space-around;
+  width: 100%;
+}
+form {
+  width: 30%;
+  height: 100%;
+}
+.messages {
+  border-left: 1px solid #ffffff11;
+  height: calc(100vh - 100px);
+  width: 70%;
+  display: grid;
+  grid-template-columns: 300px 300px 300px;
+  overflow-y: scroll;
+}
+.messages::-webkit-scrollbar {
+  display: block;
+}
+.messages::-webkit-scrollbar-thumb {
+  background-color: #66666699;
+  border-radius: 7px;
+}
+.messages::-webkit-scrollbar-track {
+  background-color: #00000033;
+}
+.card {
+  font-family: "Square721 BT";
+  width: 200px;
+  height: 200px;
+  background-color: #66666633;
+  margin: 10px;
+  padding: 10px 20px;
+  color: lightgrey;
+  border-left: 5px solid var(--cor);
+  text-align: justify-all;
+  line-height: 1.3;
+}
+.card span {
+  font-size: 10pt;
+  color: #66666699;
+}
+
+.card pre {
+  width: 200px;
+  height: 200px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: pre-wrap;
+  margin: 0 auto;
+  text-align: justify-all;
+}
+textarea {
+  background-color: #66666633;
+  border: none;
+  color: white;
+  width: 100%;
+  height: 400px;
+  margin: 0 auto;
+  padding: 5px 10px;
+  overflow: none;
+  resize: none;
+}
+textarea::-webkit-scrollbar {
+  display: block;
+}
+textarea::-webkit-scrollbar-thumb {
+  background-color: #66666699;
+  border-radius: 7px;
+}
+textarea::-webkit-scrollbar-track {
+  background-color: #00000033;
+}
+
+textarea:focus {
+  border: none;
+  outline: none;
+}
+input[type="submit"] {
+  background-color: var(--cor);
+  border: none;
+  color: white;
+  padding: 10px 15px;
+  font-size: 20pt;
+  position: relative;
+  top: 20px;
+  left: 70%;
+}
