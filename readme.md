@@ -1,5 +1,5 @@
-- [] listar quem confirmou
-- [] listar quem negou
-- [] Registrar
-    - [] Nome do(s) convidado(s)
-    - [] Texto personalizado (opcional)
+- [ ] listar quem confirmou
+- [ ] listar quem negou
+- [ ] Registrar
+    - [ ] Nome do(s) convidado(s)
+    - [ ] Texto personalizado (opcional)
