@@ -1,0 +1,49 @@
+{
+  "branchPrefix": "updates/",
+  "baseBranch": [
+    "develop"
+  ],
+  "packageRules": [
+    {
+      "matchUpdateTypes": [
+        "minor",
+        "patch",
+        "pin",
+        "digest"
+      ],
+      "automerge": true
+    },
+    {
+      "matchUpdateTypes": [
+        "major"
+      ],
+      "automerge": false
+    }
+  ],
+  "assignAutomerge": true,
+  "assignees": [
+    "rodcordeiro"
+  ],
+  "labels": [
+    "dependencies"
+  ],
+  "recreateWhen": "always",
+  "rebaseWhen": "conflicted",
+  "vulnerabilityAlerts": {
+    "labels": [
+      "security"
+    ],
+    "assignees": [
+      "@rodcordeiro"
+    ]
+  },
+  "extends": [
+    "config:recommended",
+    ":dependencyDashboard",
+    "mergeConfidence:all-badges"
+  ],
+  "schedule": [
+    "before 3am on the first day of the month"
+  ],
+  "timezone": "America/Sao_Paulo"
+}
